@@ -1,14 +1,17 @@
 import { Link } from "react-router-dom";
 import PageNav from "../components/PageNav";
-
+import AppNav from "../components/AppNav";
+// import styles from "../components/PageNav.module.css";
 function Homepage() {
   return (
     <div>
       <PageNav />
-      <h1>worlwise</h1>
+      <AppNav />
+      <h1 className="test">worlwise</h1>
+      {/* <h1 className={styles.test}>worlwise</h1> */}
       {/* <a href="/pricing">Pricing</a> */}
 
-      <Link to="/pricing">Pricing</Link>
+      <Link to="/app">Go to the app</Link>
     </div>
   );
 }
