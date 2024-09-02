@@ -18,7 +18,7 @@ const flagemojiToPNG = (flag) => {
 };
 function CityItem({ city }) {
   const { cityName, emoji, date, id, position } = city;
-  console.log(city);
+  // console.log(city);
   return (
     <li>
       <Link

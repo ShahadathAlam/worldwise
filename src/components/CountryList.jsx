@@ -19,7 +19,6 @@ function CountryList({ cities, isLoading }) {
         {
           country: city.country,
           emoji: city.emoji,
-          id: Math.floor(Math.random() * 1000000),
         },
       ];
     else return arr;
@@ -29,7 +28,7 @@ function CountryList({ cities, isLoading }) {
   return (
     <ul className={styles.countryList}>
       {countries.map((country) => (
-        <CountryItem country={country} key={country.id} />
+        <CountryItem country={country} key={country.country} />
       ))}
     </ul>
   );
