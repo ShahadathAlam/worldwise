@@ -15,28 +15,6 @@ import { CitiesProvider } from "./contexts/CitiesContext";
 
 function App() {
   return (
-    // <div>
-    //   <h1>Worldwise</h1>
-    //   <BrowserRouter>
-    //     <Routes>
-    //       <Route path="/" element={<Homepage />} />
-    //       <Route path="product" element={<Product />} />
-    //       <Route path="pricing" element={<Pricing />} />
-    //     </Routes>
-    //   </BrowserRouter>
-    // </div>
-
-    // <BrowserRouter>
-    //   <div>
-    //     <PageNav />
-    //     <Routes>
-    //       <Route path="/" element={<Homepage />} />
-    //       <Route path="product" element={<Product />} />
-    //       <Route path="pricing" element={<Pricing />} />
-    //       <Route path="*" element={<PageNotFound />} />
-    //     </Routes>
-    //   </div>
-    // </BrowserRouter>
     <CitiesProvider>
       <BrowserRouter>
         <Routes>
@@ -60,3 +38,31 @@ function App() {
 }
 
 export default App;
+
+// function App() {
+//   return (
+//     // <div>
+//     //   <h1>Worldwise</h1>
+//     //   <BrowserRouter>
+//     //     <Routes>
+//     //       <Route path="/" element={<Homepage />} />
+//     //       <Route path="product" element={<Product />} />
+//     //       <Route path="pricing" element={<Pricing />} />
+//     //     </Routes>
+//     //   </BrowserRouter>
+//     // </div>
+
+//     <BrowserRouter>
+//       <div>
+//         <PageNav />
+//         <Routes>
+//           <Route path="/" element={<Homepage />} />
+//           <Route path="product" element={<Product />} />
+//           <Route path="pricing" element={<Pricing />} />
+//           <Route path="*" element={<PageNotFound />} />
+//         </Routes>
+//       </div>
+//     </BrowserRouter>
+//   );
+// }
+// export default App;
