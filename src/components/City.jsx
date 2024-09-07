@@ -24,6 +24,7 @@ const flagemojiToPNG = (flag) => {
 
 function City() {
   const { id } = useParams();
+
   const { currentCity, getCity, isLoading } = useCities();
 
   useEffect(
