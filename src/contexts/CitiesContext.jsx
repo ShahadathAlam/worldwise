@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
+import { json } from "react-router-dom";
 
 const BASE_URL = "http://localhost:9000";
 
@@ -39,6 +40,25 @@ const CitiesProvider = function ({ children }) {
     }
   }
 
+  async function createCity(newCity) {
+    try {
+      setIsLoading(true);
+      const res = await fetch(`${BASE_URL}/cities`, {
+        method: "POST",
+        body: JSON.stringify(newCity),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const data = await res.json();
+      // console.log(data);
+      setCities((cities) => [...cities, data]);
+    } catch {
+      alert("There was an error loading data...");
+    } finally {
+      setIsLoading(false);
+    }
+  }
   return (
     <CitiesContext.Provider
       value={{
@@ -46,6 +66,7 @@ const CitiesProvider = function ({ children }) {
         isLoading,
         currentCity,
         getCity,
+        createCity,
       }}
     >
       {children}
