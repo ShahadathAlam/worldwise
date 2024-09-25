@@ -1,40 +1,52 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
+      "cityName": "Raojan",
+      "country": "Bangladesh",
+      "emoji": "🇧🇩",
+      "date": "2024-09-21T13:16:58.138Z",
+      "notes": "I love the city",
+      "position": {
+        "lat": "22.524524024543066",
+        "lng": "91.92260742187501"
+      },
+      "id": 1
+    },
+    {
+      "cityName": "Cella",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-09-25T09:05:23.277Z",
+      "notes": "",
+      "position": {
+        "lat": "40.49709237269567",
+        "lng": "-1.2974744988655629"
+      },
+      "id": 2
+    },
+    {
+      "cityName": "Europe/Lisbon",
       "country": "Portugal",
       "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
+      "date": "2024-09-25T09:05:38.060Z",
+      "notes": "",
       "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
+        "lat": "38.272688535980976",
+        "lng": "-9.035281184344008"
       },
-      "id": 73930385
+      "id": 3
     },
     {
-      "cityName": "Binaced",
+      "cityName": "Almaden",
       "country": "Spain",
       "emoji": "🇪🇸",
-      "date": "2024-09-12T08:10:51.190Z",
-      "notes": "sdgs",
+      "date": "2024-09-25T09:05:49.212Z",
+      "notes": "",
       "position": {
-        "lat": "41.78992234579987",
-        "lng": "0.17109905015655794"
+        "lat": "38.685509760012025",
+        "lng": "-4.7707500992859995"
       },
-      "id": 73930387
-    },
-    {
-      "cityName": "Allepuz",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-09-12T08:12:01.414Z",
-      "notes": "tgtge",
-      "position": {
-        "lat": "40.466730267279694",
-        "lng": "-0.6185893370925389"
-      },
-      "id": 73930388
+      "id": 4
     }
   ]
 }
